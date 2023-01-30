@@ -1,0 +1,224 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0; /*font-size: 100%;*/ /*font: inherit;*/
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after { /*content: '';*/ /*content: none;*/
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+li {
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: local('Myriad Pro Semibold'), local('MyriadPro-Semibold'),
+    url('../fonts/MyriadPro-Semibold.woff2') format('woff2'),
+    url('../fonts/MyriadPro-Semibold.woff') format('woff'),
+    url('../fonts/MyriadPro-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: local('Myriad Pro Regular'), local('MyriadPro-Regular'),
+    url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
+    url('../fonts/MyriadPro-Regular.woff') format('woff'),
+    url('../fonts/MyriadPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --pointer: pointer;
+
+    --font-weight-Regular: 400;
+    --font-weight-SemiBold: 600;
+    --white: #fff;
+    --black: #000;
+    --red-text: #d30a19;
+}
+
+body {
+    font-family: 'Myriad Pro', sans-serif;
+    box-sizing: border-box;
+    font-weight: var(--font-weight-Regular);
+    background: var(--white);
+}
+
+img {
+    cursor: var(--pointer);
+    width: 100%;
+}
+
+.container {
+    max-width: 1060px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-space-around {
+    justify-content: space-around;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.first-section {
+    margin-top: 52px;
+
+}
+
+.first-section__title {
+    text-transform: uppercase;
+    color: var(--black);
+    font-size: 43px;
+    font-weight: var(--font-weight-SemiBold);
+    margin-bottom: 23px;
+}
+
+.first-section__subtitle {
+    font-size: 22px;
+    color: var(--red-text);
+    margin-bottom: 81px;
+}
+
+.first-section__description {
+    font-size: 48px;
+}
+
+
+.description {
+    color: var(--black);
+}
+
+.first-img {
+    max-width: 655px;
+}
+
+.second-section {
+    margin-bottom: 185px;
+}
+
+.second-section__description {
+    font-size: 52px;
+    margin: 0 auto 163px;
+}
+
+.third-section__title {
+    font-size: 55px;
+
+}
+.fifth-section{
+    margin-top: 140px;
+}
+.fifth-section__title{
+    font-size: 53px;
+    margin-bottom: 110px;
+}
+.fifth-section__wrap{
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 770px;
+}
+.fifth-section__w {
+    max-width: 350px;
+
+}
+.fifth-section__list{
+    margin-bottom: 47px;
+    text-align: start;
+}
+.fifth-section__list:after{
+    display: block;
+    content: '';
+    background: var(--black);
+    height: 1px;
+    width: 143px;
+    margin-top: 47px;
+}
+
+@media (max-width: 1068px) {
+    .first-section__title {
+        font-size: 30px;
+    }
+
+    .first-section__subtitle {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .first-section__description {
+        font-size: 30px;
+    }
+
+    .second-section {
+        margin-bottom: 60px;
+    }
+
+    .second-section__description {
+        font-size: 30px;
+        margin-bottom: 60px;
+    }
+
+    .third-section__title {
+        font-size: 30px;
+    }
+    .fifth-section{
+        margin-top: 60px;
+    }
+    .fifth-section__title{
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+
+}
+
+@media (min-width: 1220px) {
+    .second-img {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .forth-img {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .sixth-img{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
